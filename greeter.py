@@ -1,2 +1,5 @@
-name = input("Please enter you name: ")
-print("hello, " + name + '!')
+prompt = "If you tell us who you are, we can personalize the messages you see."
+prompt += "\nWhat is you first name? "
+
+name = input(prompt)
+print("Hello, " + name + '!')
