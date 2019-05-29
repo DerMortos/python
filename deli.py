@@ -1,8 +1,15 @@
-sandwhich_orders = ['reuben', 'blt', 'pastrami', 'tuna', 'egg', 'avocado',]
+sandwich_orders = ['reuben', 'blt', 'pastrami', 'tuna', 'pastrami', 
+						'egg', 'avocado', 'pastrami']
 finished_sandwiches = []
 
-while sandwhich_orders:
-	current_sandwich = sandwhich_orders.pop()
+print("Sorry, We have run out of pastrami.\n")
+
+while 'pastrami' in sandwich_orders:
+		sandwich_orders.remove('pastrami')
+		
+while sandwich_orders:
+	current_sandwich = sandwich_orders.pop()
+
 
 	print("I mada a " + current_sandwich + ' sandwich.')
 	finished_sandwiches.append(current_sandwich)
