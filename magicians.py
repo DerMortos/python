@@ -1,6 +1,18 @@
-magicians = ['alice', 'david', 'carolina']
-for magician in magicians:
-	print(magician.title() + ", that was a great trick!")
-	print("I can't wait to see you next trick " + magician.title() +".\n")
+magicians = ['jerri', 'milton', 'sheila', 'pita']
+magicians_upgrade = []
 
-print("Thank you, everyone. Thaty was a great magic show!")
+def show_magicians(magicians):
+	for magician in magicians:
+		print(magician)
+
+def make_great(magicians):
+	while magicians:
+		current_magician = magicians.pop() + ' the great'
+		magicians_upgrade.append(current_magician)
+
+
+show_magicians(magicians)
+make_great(magicians[:])
+
+print(magicians)
+print(magicians_upgrade)
