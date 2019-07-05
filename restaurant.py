@@ -14,6 +14,10 @@ class Restaurant():
 	def set_number_served(self, served):
 		self.number_served += served
 
+class IceCreamStand(Restaurant):
+	"""modeling a type of restaurant."""
+	def ___init___(self, name, cusine, number):
+
 first = Restaurant('chillis', 'texmex',0)
 second = Restaurant('carinos', 'itallian',0)
 third = Restaurant('deli', 'sandwiches', 0)
