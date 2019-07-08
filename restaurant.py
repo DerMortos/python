@@ -16,14 +16,18 @@ class Restaurant():
 
 class IceCreamStand(Restaurant):
 	"""modeling a type of restaurant."""
-	def ___init___(self, name, cusine, number):
+	def __init__(self, name, cusine, number):
+		super().__init__(name,cusine,number)
+		self.flavors = ['vanilla', 'chocolate', 'strawberry']
+		print('we sell the following flavors: ') + self.flavors
 
-first = Restaurant('chillis', 'texmex',0)
+first = Restaurant('chillis', 'texmex',0) 
 second = Restaurant('carinos', 'itallian',0)
 third = Restaurant('deli', 'sandwiches', 0)
 
 first.describe_restaurant()
 first.open_restaurant()
+first.IceCreamStand.flavors()
 
 second.describe_restaurant()
 second.open_restaurant()
